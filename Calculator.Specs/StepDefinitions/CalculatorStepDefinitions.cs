@@ -11,7 +11,7 @@ public sealed class CalculatorStepDefinitions
     private readonly Calculator _calculator = new Calculator();
     private int _result;
 
-    [Given("the first number is {int}")]
+    [Given("the first number is (.*)")]
     public void GivenTheFirstNumberIs(int number)
     {
         _calculator.FirstNumber = number;
